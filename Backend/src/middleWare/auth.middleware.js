@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
-import { ApiError } from "../utilis/apiError";
-import { asyncHandler } from "../utilis/asyncHandeller";
-import { User } from "../models/user.models";
+import { ApiError } from "../utilis/apiError.js";
+import { asyncHandler } from "../utilis/asyncHandeller.js";
+import { User } from "../models/user.models.js";
 import dotenv from "dotenv"
 
 
