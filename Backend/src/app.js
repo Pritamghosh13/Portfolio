@@ -1,5 +1,6 @@
 import express from "express"
 import adminRouter from "./routes/admin.routes.js"
+import profileRouter from "./routes/profile_info.routes.js"
 import cookieParser from "cookie-parser"
 
 
@@ -15,6 +16,12 @@ app.use(cookieParser())
 
 
 app.use("/api/v1/admin" , adminRouter)
+
+
+app.use("/api/v1/admin" , profileRouter)
+
+
+
 
 
 export {app}
